@@ -1,0 +1,84 @@
+/* ColorPicker.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .color-palette {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .color-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid white;
+  }
+  
+  .color-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .custom-picker {
+    margin-top: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-picker input[type="color"] {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .custom-picker input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .custom-picker input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 6px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .color-box {
+      width: 50px;
+      height: 50px;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+  }

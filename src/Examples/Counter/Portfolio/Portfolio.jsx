@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header'
-import About from './components/About'
-import Projects from './components/Project'
-import Footer from './components/Footer'
+import './Portfoolio.css'
+
+import Header from '../../Portfolio/Header'
+import About from '../../Portfolio/About'
+import Projects from '../../Portfolio/Project'
+import Footer from '../../Portfolio/Footer'
 
 function GreetingMessage(name){
   return <h1>Hello, {name}</h1>
@@ -24,7 +25,7 @@ function Important(){
 
 }
 
-function App() {
+function PortfolioApp() {
   const userName = "John Pork";
   const profession = "Full Stack Developer";
   
@@ -72,4 +73,4 @@ function LearnE() {
   )
 }
 
-export default App
+export default PortfolioApp
