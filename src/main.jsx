@@ -9,8 +9,8 @@ import './index.css'
 //import App from './Examples/Color Picker/ColorPicker.jsx'
 //import App from './Examples/MouseTracker/MouseTracker.jsx'
 //import App from './Examples/Clock/Clock.jsx'
-import App from './Examples/Custom Hooks/CounterHook/CounterHookApp.jsx'
-
+//import App from './Examples/Custom Hooks/CounterHook/CounterHookApp.jsx'
+import App from './Examples/ApiCall/ApiCall.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
