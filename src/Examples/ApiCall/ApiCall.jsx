@@ -4,7 +4,7 @@ import axios from "axios"
 
 
 
-
+// you can use  axios.get like /posts only easier maintain
 
 
 axios.interceptors.request.use((request)=>{
@@ -68,7 +68,7 @@ function App(){
             body: 'bar',
             userId: 1,
         }
-    
+        //customApi.post
         axios.post('https://jsonplaceholder.typicode.com/posts',newObject)
         .then((response)=>{
             console.log('Data sent successfully',response.data)

@@ -1,0 +1,97 @@
+/* Form.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  div {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  select:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  /* Checkbox and Radio Styles */
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Custom checkbox */
+  input[type="checkbox"] + span,
+  input[type="radio"] + span {
+    position: relative;
+    padding-left: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Radio button group */
+  div > label {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  /* Form data display */
+  p {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    form {
+      padding: 1rem;
+    }
+    
+    div > label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
